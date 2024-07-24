@@ -1,0 +1,32 @@
+.alerts{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 70vh;
+    height: 80vh;
+}
+
+.alerts h2{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+}
+.alerts-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: -webkit-fill-available;
+    height: 100%;
+    overflow: auto;
+    gap: 10px;
+}
+.alerts-list::-webkit-scrollbar {
+    display: none; 
+  }
+
+.alerts-list li{
+    list-style: none;
+}
