@@ -2,14 +2,16 @@ import { Alert } from './Alert';
 import PropTypes from 'prop-types';
 import "../styles/ListAlerts.css";
 
-export const ListAlerts = ({alerts}) => {
+export const ListAlerts = ({alerts, setSelected}) => {
     return(
     <section className='alerts'>
-        {/* <h2>Alertas: </h2> */}
         <ul className='alerts-list'>
             {alerts.map((alert, index) => 
                 <li key={index}>
-                    <Alert alert={alert}></Alert>
+                    <Alert 
+                        alert={alert}
+                        onClick={() => setSelected(alert)} 
+                    />
                 </li>        
         )}
         </ul>
@@ -18,5 +20,6 @@ export const ListAlerts = ({alerts}) => {
 }
 
 ListAlerts.propTypes = {
-    alerts: PropTypes.array.isRequired
+    alerts: PropTypes.array.isRequired,
+    setSelected: PropTypes.func.isRequired
 };

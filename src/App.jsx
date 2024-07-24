@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Header } from "./components/Header.jsx"
 import { MapComp } from "./components/Map.jsx"
 import { ListAlerts } from "./components/ListAlerts.jsx";
+import { AlertSelected } from "./components/AlertSelected.jsx";
 import './styles/App.css'
 
 function App() {
@@ -33,7 +34,6 @@ function App() {
     }
   ];
   const [selectedAlert, setSelectedAlert] = useState(null);
-  console.log(selectedAlert);
   return (
     <>
       <Header></Header>
@@ -43,8 +43,14 @@ function App() {
           setSelected={setSelectedAlert}
           selected={selectedAlert}
         ></MapComp>
+          {selectedAlert &&
+            <AlertSelected
+              alert={selectedAlert}
+            />
+          }
         <ListAlerts
           alerts={alerts}
+          setSelected={setSelectedAlert}
         />
       </div>
     </>

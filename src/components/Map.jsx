@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 const print = (info) => console.log(info);
 
 export const MapComp = ({ alerts = [], setSelected = print, selected={}}) => {
-    
     return (
         <section className="mapa">
             {name && <h1>{name}</h1>}
@@ -19,10 +18,10 @@ export const MapComp = ({ alerts = [], setSelected = print, selected={}}) => {
             {alerts.map((alert, index) =>  
                 <Marker 
                     key={index} 
-                    width={35} 
+                    width={selected?.nombre === alert.nombre ? 40: 35} 
                     anchor={alert.ubicacion}
                     hover= {true}
-                    onMouseOver={() => setSelected(alert)}
+                    onClick={() => setSelected(alert)}
                     color= {selected?.nombre === alert.nombre ? "red": "#943D8A"}
                 />
             )}
