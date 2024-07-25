@@ -1,8 +1,7 @@
-# React + Vite
+# Frontend - Viva Segura - Prototipo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto en react, para la interfaz de un proyecto llamado - Viva Segura - que busca recoger las alertas que se emitan y poder ser mostradas en el dashboard a travez de un mapa y una lista despegable:
 
-Currently, two official plugins are available:
+[![Imagen del dashboard](https://i.imgur.com/R3pKcER.png "Imagen del dashboard")](https://i.imgur.com/R3pKcER.png "Imagen del dashboard")
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este es un proyecto de prototipo para la presentacion a la hackaton poopayan 2 de talento Tech:
