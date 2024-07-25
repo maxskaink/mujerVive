@@ -12,25 +12,53 @@ function App() {
       nombre: "Maria",
       ubicacion: [2.443312, -76.606636],
       fecha: "2021-10-10",
-      prioridad: "alta"
+      prioridad: "alta",
+      apelldio: "Perez",
+      cedula:1234567890,
+      fechaNacimiento: "1990-10-10",
+      barrio: "La Paz",
+      telefono: 3131234567,
+      estadoCivil: "soltera",
+      numeroHijos: 0
     },
     {
-      nombre: "Juan",
+      nombre: "Mariana",
       ubicacion: [2.44143, -76.606712],
       fecha: "2021-10-10",
-      prioridad: "alta"
+      prioridad: "alta",
+      apelldio: "Gonzales",
+      cedula: 2987654321,
+      fechaNacimiento: "1985-06-11",
+      barrio: "Pomona",
+      telefono: 3131238677,
+      estadoCivil: "Viuda",
+      numeroHijos: 3
     },
     {
-      nombre: "Pedro",
+      nombre: "Diana",
       ubicacion: [2.442543, -76.607636],
       fecha: "2021-10-10",
-      prioridad: "alta"
+      prioridad: "media",
+      apelldio: "Muelas",
+      cedula: 6926402745,
+      fechaNacimiento: "2000-11-21",
+      barrio: "Simon Bolivar",
+      telefono: 3131234567,
+      estadoCivil: "casada",
+      numeroHijos: 1
     },
     {
       nombre: "Ana",
       ubicacion: [2.442444, -76.606666],
       fecha: "2021-10-10",
-      prioridad: "alta"
+      prioridad: "alta",
+      apelldio: "Perez",
+      cedula:1234567890,
+      fechaNacimiento: "1990-10-10",
+      barrio: "La Paz",
+      telefono: 3131234567,
+      estadoCivil: "soltera",
+      numeroHijos: 0
     }
   ];
   const [selectedAlert, setSelectedAlert] = useState(null);
